@@ -31,7 +31,11 @@ By organizing all these elements into a relational database, EcoMove provides a 
 The system is designed around a distributed network of vehicles and rental stations.
 
 <p align="center">
-  <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1200&q=85" alt="Urban bicycle sharing" width="90%" />
+  <img
+    src="./ecomove-cover.png"
+    alt="EcoMove - Urban Mobility"
+    width="100%"
+  />
 </p>
 
 ### The mobility network
