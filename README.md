@@ -239,6 +239,34 @@ flowchart TD
 
 EcoMove is based on a relational database model.
 
+The original project documentation includes the progressive development of the conceptual model, from the initial skeleton to the refined Entity-Relationship design.
+
+### Conceptual model development
+
+**Initial skeleton**
+
+<p align="center">
+  <img src="./Progetto_Database_file/image001.jpg" alt="Initial conceptual database skeleton" width="85%">
+</p>
+
+**Intermediate conceptual model**
+
+<p align="center">
+  <img src="./Progetto_Database_file/image003.jpg" alt="Intermediate conceptual database model" width="85%">
+</p>
+
+**Entity-Relationship model with cardinalities**
+
+<p align="center">
+  <img src="./Progetto_Database_file/image005.jpg" alt="Entity-Relationship model with cardinalities and attributes" width="100%">
+</p>
+
+**Detailed Entity-Relationship model**
+
+<p align="center">
+  <img src="./Progetto_Database_file/image007.jpg" alt="Detailed Entity-Relationship model" width="100%">
+</p>
+
 The design identifies the main entities, their attributes, primary keys and relationships, translating the conceptual structure into a relational schema.
 
 ### Main entities
@@ -323,6 +351,12 @@ The principal tables are:
 | `Cittadino` | `cf` |
 | `Parentela` | `dichiarante`, `componente` |
 
+The relational structure is also represented in the database-design diagram below.
+
+<p align="center">
+  <img src="./Progetto_Database_file/image009.png" alt="Relational database schema" width="100%">
+</p>
+
 The schema uses:
 
 - **Primary Keys (PK)** to uniquely identify records.
@@ -356,6 +390,28 @@ The documented triggers include:
 | `PAGAMENTO_EFFETTUATO` | Updates the remaining Mobility Card credit after a successful payment, subject to the available balance. |
 
 These mechanisms reduce the need for manual updates and help maintain consistency between related database records.
+
+### Trigger implementation examples
+
+The original report also contains SQL examples for rental and payment updates.
+
+**Rental completion and update**
+
+<p align="center">
+  <img src="./Progetto_Database_file/image011.jpg" alt="SQL trigger example for rental completion" width="100%">
+</p>
+
+**Rental payment record**
+
+<p align="center">
+  <img src="./Progetto_Database_file/image012.jpg" alt="SQL trigger example for payment record management" width="100%">
+</p>
+
+**Payment status update**
+
+<p align="center">
+  <img src="./Progetto_Database_file/image013.jpg" alt="SQL trigger example for payment status update" width="100%">
+</p>
 
 ---
 
